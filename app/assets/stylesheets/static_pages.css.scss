@@ -1,3 +1,30 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+/* start slider */
+.slider_bg {
+	background:  url('bg.png');
+	background-size: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-bottom: 3%;
+}
+.slider {
+	padding: 0 4%;
+}
+.slider-text {
+	font-family: 'PT Sans';
+	text-shadow: 1px 1px 1px #000;
+	color: #FFFFFF;
+}
+.big-ico {
+	font-size: 100px;
+}
+.logo-text {
+	font-family: 'Anton';
+	font-size: 45px;
+	color: #3498da;
+	text-shadow: 2px 3px 2px #000;
+}
