@@ -23,8 +23,17 @@
 	font-size: 100px;
 }
 .logo-text {
-	font-family: 'Anton';
+	font-family: 'Anton';	
+	color: #3498da;	
+}
+.logo-title {
 	font-size: 45px;
-	color: #3498da;
 	text-shadow: 2px 2px 2px #000;
+}
+.logo-sub-title {
+	position: relative;
+	top: -10px;
+	font-size: 18px;
+	text-shadow: 1px 1px 1px #000;
+	font-family: 'PT Sans', sans-serif;;
 }

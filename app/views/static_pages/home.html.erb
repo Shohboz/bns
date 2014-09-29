@@ -24,8 +24,9 @@
 <div class="slider_bg" id="home">
 
 	<div class="container">
-		<div class="col-lg-4">
-			<h2 class="centered logo-text">Bnservice</h1>
+		<div class="col-lg-4 centered">
+			<h1 class="logo-text logo-title">Bnservice</h1>
+			<h4 class="logo-text logo-sub-title">инжиниринговая компания</h4>
 		</div>
 		<div class="col-lg-4">
 			<h1 class="centered slider-text">
@@ -34,7 +35,7 @@
 		</div>
 		<div class="col-lg-4">
 			<h2 class="centered slider-text">
-				<span class="icon icon-mobile"></span> +34 59855 9853 <br/>				
+				<span class="icon icon-mobile"></span> +7(8332)49-82-62 <br/>
 			</h2>
 		</div>
 	</div>
@@ -45,24 +46,24 @@
 			<div id="da-slider" class="da-slider">
 				<div class="da-slide">
 					<h2>Обслуживание объектов связи</h2>
-					<p>Обслуживание антенно-мачтовых сооружений объектов связи.</p>
+					<p> Технический осмотр и обслуживание антенно-мачтовых сооружений и базовых станций</p>
 				</div>
 				<div class="da-slide">
 					<h2>Инсталляция и интеграция</h2>
-					<p>Инсталляция и интеграция радиоэлектронных и мультимедийных систем.</p>
+					<p>Инсталляция и интеграция радиоэлектронных и мультимедийных систем</p>
 				</div>
 				<div class="da-slide">
-					<h2>Сервисные услуги</h2>
-					<p>Сервисное и техническое обслуживание электроники.</p>
+					<h2>Автоматизация и диспетчеризация</h2>
+					<p>Сервисное и техническое обслуживание электроники</p>
 				</div>
 				<div class="da-slide">
 					<h2>Разработка</h2>
-					<p>Разработка систем управления производственных линий и технологических комплексов.</p>
+					<p>Разработка систем управления производственных линий и технологических комплексов</p>
 				</div>
 				<div class="da-slide">
-					<h2>Сопровождение
+					<h2>Консалтинговые услуги
 					</h2>
-					<p>Обслуживание, модернизация и ремонт систем управления на базе программируемых логических контроллеров.</p>
+					<p>Лицензирование деятельности в области телекоммуникаций, получение разрешений на использование радиочастот</p>
 				</div>				
 			</div> 			
  		</div>
@@ -78,26 +79,37 @@
 		<hr>
 		
 		<div class="col-lg-6">
-			<p>We believe ideas come from everyone, everywhere. In fact, at BlackTie, everyone within our agency walls is a designer in their own right. And there are a few principles we believe—and we believe everyone should believe—about our design craft. These truths drive us, motivate us, and ultimately help us redefine the power of design. We’re big believers in doing right by our neighbors. After all, we grew up in the Twin Cities and we believe this place has much to offer. So we do what we can to support the community we love.</p>
+			<p>"Bnservice" образована в 2014 году в Кирове.<br>Мы оказываем полный спектр услуг в области телекоммуникаций.</p>
 		</div><!-- col-lg-6 -->
 		
 		<div class="col-lg-6">
-			<p>Over the past four years, we’ve provided more than $1 million in combined cash and pro bono support to Way to Grow, an early childhood education and nonprofit organization. Other community giving involvement throughout our agency history includes pro bono work for more than 13 organizations, direct giving, a scholarship program through the Minneapolis College of Art & Design, board memberships, and ongoing participation in the Keystone Club, which gives five percent of our company’s earnings back to the community each year.</p>
+			<p>Имеем опыт в настройке и обслуживании средств радиосвязи на базе стандарта DMR, техническом осмотре и техническом обслуживании антенно-мачтовых сооружений.</p>
 		</div><!-- col-lg-6 -->
 	</div><!-- row -->
+	<br>
+	<br>
+	<br>
 </div><!-- container -->
 
-<div class="container" id="contact" name="contact">
-
-	<h1 class="centered">Как нас найти</h1>
-	<hr>
-
-	<div class="map">			
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16655.18926007363!2d49.6358475!3d58.546737549999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43fcf6d0bfcb665d%3A0x300cf601fd1f14ec!2z0KfQuNGB0YLRi9C1INCf0YDRg9C00YssINCa0LjRgNC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KDQvtGB0YHQuNGP!5e0!3m2!1sru!2s!4v1411639825469" width="100%" height="250" frameborder="0" style="border:0"></iframe>
+<div id="greywrap" name="clients">
+	<div class="container">		
+		<h1 class="centered">Наши клиенты</h1>
+		<hr>
+		<br>
+		<br>
+		<div class="col-lg-12 centered">
+			<%= image_tag("Sberbank.svg", :alt => "сбербанк", :onerror => "this.src=Sberbank.png") %>
+		</div><!-- col -->
 	</div>
+	<br>
+	<br>
+	<br>
+</div>
 
-
+<div class="container" id="contact" name="contact">
 	<div class="row">
+	<br>
+	<br>
 	<br>
 		<h1 class="centered">Свяжитесь с нами</h1>
 		<hr>
@@ -105,12 +117,10 @@
 		<br>
 		<div class="col-lg-5">
 			<h3>Контактная информация</h3>
-			<p><span class="icon icon-home"></span> Киров, Россия<br/>
-				<span class="icon icon-phone"></span> +34 9884 4893 <br/>
-				<span class="icon icon-mobile"></span> +34 59855 9853 <br/>
-				<span class="icon icon-envelop"></span> <a href="#"> admin@bnservice.pro</a> <br/>
-				<span class="icon icon-twitter"></span> <a href="#"> @bnservice </a> <br/>
-				<span class="icon icon-facebook"></span> <a href="#"> Bnservice </a> <br/>
+			<p>
+				<span class="icon icon-home"></span> Киров, Россия<br/>
+				<span class="icon icon-mobile"></span> +7(8332)49-82-62 <br/>
+				<span class="icon icon-envelop"></span> <a href="#"> info@bnservice.pro</a> <br/>
 			</p>
 		</div><!-- col -->
 		
