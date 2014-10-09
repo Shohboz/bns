@@ -60,19 +60,13 @@
 			
 			// slideshow
 			if( this.options.autoplay ) {
-			
 				this._startSlideshow();
-			
 			}
-			
 		},
-		_navigate			: function( page, dir ) {
-			
-			var $current	= this.$slides.eq( this.current ), $next, _self = this;
-			
+		_navigate: function( page, dir ) {
+			var $current = this.$slides.eq( this.current ), $next, _self = this;
 			if( this.current === page || this.isAnimating ) return false;
-			
-			this.isAnimating	= true;
+			this.isAnimating = true;
 			
 			// check dir
 			var classTo, classFrom, d;
@@ -147,13 +141,13 @@
 			this._updatePage();
 			
 		},
-		_updatePage			: function() {
+		_updatePage: function() {
 		
 			this.$pages.removeClass( 'da-dots-current' );
 			this.$pages.eq( this.current ).addClass( 'da-dots-current' );
 		
 		},
-		_startSlideshow		: function() {
+		_startSlideshow: function() {
 		
 			var _self	= this;
 			
@@ -171,7 +165,7 @@
 			}, this.options.interval );
 		
 		},
-		page				: function( idx ) {
+		page: function( idx ) {
 			
 			if( idx >= this.slidesCount || idx < 0 ) {
 			
@@ -189,8 +183,7 @@
 			this._navigate( idx );
 			
 		},
-		_loadEvents			: function() {
-			
+		_loadEvents: function() {			
 			var _self = this;
 			
 			this.$pages.on( 'click.cslider', function( event ) {
@@ -253,28 +246,23 @@
 							_self.isAnimating	= false;
 						
 					});
-				
 				}
-			
 			}
-			
 		}
 	};
-	
-	var logError 			= function( message ) {
+
+	var logError = function( message ) {
 		if ( this.console ) {
 			console.error( message );
 		}
 	};
-	
-	$.fn.cslider			= function( options ) {
-	
+
+	$.fn.cslider = function( options ) {
 		if ( typeof options === 'string' ) {
-			
+
 			var args = Array.prototype.slice.call( arguments, 1 );
-			
+
 			this.each(function() {
-			
 				var instance = $.data( this, 'cslider' );
 				
 				if ( !instance ) {
@@ -287,26 +275,17 @@
 					logError( "no such method '" + options + "' for cslider instance" );
 					return;
 				}
-				
 				instance[ options ].apply( instance, args );
-			
 			});
-		
-		} 
+		}
 		else {
-		
 			this.each(function() {
-			
 				var instance = $.data( this, 'cslider' );
 				if ( !instance ) {
 					$.data( this, 'cslider', new $.Slider( options, this ) );
 				}
 			});
-		
 		}
-		
-		return this;
-		
+		return this;	
 	};
-	
 })( jQuery );
