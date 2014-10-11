@@ -732,7 +732,7 @@
 		width:100%
 	}
 	.da-slider {
-		height: 450px;
+		height: 640px;	/* ??? */
 	}
 	.da-slide .da-link {
 		margin-left: 30%;
