@@ -5,7 +5,7 @@
 <link href='//fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
 
 <script type="text/javascript">
-	$(document).ready(function($) {
+	$(function($) {
 		$(".scroll").click(function(event){		
 			event.preventDefault();
 			$('html, body').animate({scrollTop:$(this.hash).offset().top}, 1200);
@@ -13,7 +13,7 @@
 
 		$('#da-slider').cslider({
 			autoplay	: true,
-			bgincrement	: 3000
+			bgincrement	: 3e3
 		});
 	
 	});
@@ -25,10 +25,6 @@
     <div class="navbar navbar-inverse navbar-fixed-top bg-op nav-op">
       <div class="container-fluid">
         <div class="navbar-header">
-          <!--button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon icon-shield" style="font-size:30px; color:#3498db;"></span>
-          </button>
-          <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="icon icon-shield" style="font-size:18px; color:#3498db;"></span></a-->
           	<h1 class="centered slider-text" style="padding-left: 30px">
           		<a class="navbar-brand" href="#home">
 					<span class="icon icon-html5 big-ico" style="color:#3498db"></span>
@@ -44,7 +40,9 @@
 
 			<ul class="nav navbar-nav navbar-right" style="padding-right: 30px">
 				<h2 class="centered slider-text">
-					<span class="icon icon-mobile"></span> +7(8332)49-82-62 <br/>
+					<span class="icon icon-mobile"></span>
+						<a href="tel:+7(8332)49-82-62"> +7(8332)49-82-62 </a>
+					<br/>
 				</h2>			
 			</ul>
         </div><!--/.nav-collapse -->
@@ -124,8 +122,10 @@
 			<h3>Контактная информация</h3>
 			<p>
 				<span class="icon icon-home"></span> Киров, Россия<br/>
-				<span class="icon icon-mobile"></span> +7(8332)49-82-62 <br/>
-				<span class="icon icon-envelop"></span> <a href="#"> info@bnservice.pro</a> <br/>
+				<span class="icon icon-mobile"></span>
+					<a href="tel:+7(8332)49-82-62"> +7(8332)49-82-62 </a>
+				<br/>
+				<span class="icon icon-envelop"></span> <a href="mailto:info@bnservice.pro?subject=From promo site"> info@bnservice.pro</a> <br/>
 			</p>
 		</div><!-- col -->
 		
