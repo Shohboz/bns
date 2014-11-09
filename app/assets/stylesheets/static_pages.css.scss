@@ -2,6 +2,46 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 /* start slider */
+.navbar-brand {
+	padding: initial;
+}
+.navs-bns {
+	padding-left: 50px;
+	font-family: 'Kelly Slab', cursive;
+}
+.tel-bns {
+	font-family: 'Kelly Slab', cursive !important;
+}
+@media (max-width: 768px) {
+    .logo-bns {
+        display: none;
+    }
+	.logo-bns-text {
+		display: block !important;
+	}
+}
+.logo-bns {
+	background: initial;
+}
+.logo-bns-text {
+	font-family: 'Kelly Slab', cursive;
+	color: #3498db;
+	display: none;
+}
+li {
+	h3.slider-text{
+		margin-top: 12px;
+	}
+}
+.special-alert {
+	top: 120px;
+	float: none;
+	z-index: 9000;
+}
+.container-alert {
+	position: absolute;
+}
+
 .slider_bg {
 	background:  url('bg.png');
 	background-size: 100%;
@@ -53,5 +93,5 @@
 	background: url('shadow.png') repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
 }
 .nav-op {
-	height: 70px;
+	height: 50px;
 }

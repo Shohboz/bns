@@ -9,6 +9,9 @@ group :development, :test do
 	gem 'rspec-rails'
 end
 
+gem 'mail_form'
+gem 'simple_form'
+
 group :test do
 	gem 'selenium-webdriver'
 	gem 'capybara'

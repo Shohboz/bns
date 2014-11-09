@@ -1,0 +1,21 @@
+<%= simple_form_for @contact || Contact.new, :html => {:class => 'form-horizontal', :role => "form" } do |f| %>
+  <div class="form-group">
+    <div class="col-lg-6">
+      <%= f.input :email, :input_html => { :class => "form-control" }, :placeholder => "Email", :required => true, :label => false %>
+    </div>
+    <div class="col-lg-5">
+      <%= f.input :name, :required => true, :input_html => { :class => "form-control" }, :placeholder => "Ваше имя", :label => false %>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="text2" class="col-lg-4 control-label"></label>
+      <div class="col-lg-11">
+        <%= f.input :message, :as => :text, :required => true, :placeholder => "Текст сообщения", :input_html => { :class => "form-control" }, :label => false %>
+      </div>
+  </div>
+  <div class="form-group">
+    <div class="col-lg-10">
+      <%= f.button :submit, 'Отправить', :class=> "btn btn-primary" %>
+    </div>
+  </div>
+<% end %>

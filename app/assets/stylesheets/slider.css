@@ -59,15 +59,16 @@
 	text-align: center;
 	text-shadow: 1px 1px 1px #000;
 	background: url('shadow.png') repeat scroll 0 0 rgba(0, 0, 0, 0);
- 	padding: 20px;
- 	height: 175px;
+ 	padding: 15px;
+ /*	height: 175px;	*/
 }
 .da-slide p{
-	top: 100px;
+/*	top: 100px;	*/
+	top: 322px;
 	position: absolute;
 	color: #CFCFCF;
 	font-size: 24px;
-	height: 82px;
+/*	height: 82px;	*/
 	overflow: hidden;
 	font-weight: normal;
 	line-height: 29px;
@@ -75,6 +76,8 @@
 	margin: 0 auto;
 	width: 77%;
 	font-family: 'PT Sans';	/* adding */
+	background: url('shadow.png') repeat scroll 0 0 rgba(0, 0, 0, 0); /* add */
+	padding: 15px; /* add */
 	text-shadow: 1px 1px 1px #000;
 	text-transform: lowercase;
 	white-space: normal;
@@ -711,20 +714,24 @@
 }
 @media only screen and (max-width: 1280px) and (min-width:1024px)
 {
+	.da-slide {
+		top: 150px;
+	}
 	.da-slide h2 {
-	top: 80px;
+		font-size: 2em;
+		top: 66px;
 	}
 	.da-slide p {
-	top: 145px;
+		top: 151px;
 	}
 	.da-slide .da-link {
-	top: 280px;
+		top: 280px;
 	}
 	.da-dots {
-	bottom: 100px;
+		bottom: 20px;
 	}
 	.da-slider {
-	height: 490px;
+		height: 490px;
 	}
 }
 @media only screen and (max-width: 1024px) and (min-width:768px) {
@@ -734,15 +741,21 @@
 	.da-slider {
 		height: 640px;	/* ??? */
 	}
+	.da-slide {
+		top: 120px;
+	}
 	.da-slide .da-link {
 		margin-left: 30%;
 	}
 	.da-dots {
-	bottom: 80px;
+		bottom: 80px;
 	}
 	.da-slide h2 {
-	top: 80px;
-	font-size: 2.2em;
+		top: 61px;
+		font-size: 1.6em;
+	}
+	.da-slide p{
+		top: 139px;
 	}
 }
 @media only screen and (max-width: 768px) and (min-width:640px) {
@@ -752,17 +765,24 @@
 	.da-slider {
 		height:480px;
 	}
+	.da-slide {
+		top: 120px;
+	}
 	.da-slide .da-link {
 		margin-left: 28%;
 	}
 	.da-slide h2{
+		font-size: 1.4em;
 		top:70px;
 	}
 	.da-slide p{
-		top: 139px;
+		top: 144px;
 	}
 	.da-slide .da-link {
 		top: 280px;
+	}
+	.big-ico {
+		font-size: initial !important;
 	}
 }
 @media only screen and (max-width: 640px) and (min-width:480px) {
@@ -776,24 +796,28 @@
 		margin-left: 28%;
 	}
 	.da-slide h2{
-		font-size: 2em;
+		font-size: 1em;
 		top:70px;
 	}
 	.da-slide p{
-		top: 125px;
-		font-size:0.8725em;
+		top: 137px;
+		font-size:1.1em;
+		line-height: 22px;
 	}
 	.da-slide .da-link {
 		top: 235px;
 	}
 	.da-dots {
-	bottom: 60px;
+		bottom: 30px;
+	}
+	.big-ico {
+		font-size: initial !important;
 	}
 }
 @media only screen and (max-width: 480px) and (min-width:320px) {
 	.da-dots {
 		width:100%;
-		bottom: 30px;
+		bottom: 20px;
 	}
 	.da-slider {
 		height: 300px;
@@ -802,12 +826,18 @@
 		margin-left: 22%;
 	}
 	.da-slide h2{
-		font-size: 1.5em;
-		top: 35px;
+		font-size: 0.8em;
+		top: 55px;
+		width: initial;
+	}
+	.big-ico {
+		font-size: initial !important;
 	}
 	.da-slide p{
-		top: 100px;
+		top: 119px;
 		font-size:0.8125em;
+		line-height: 20px; /* add */
+		width: initial;
 	}
 	.da-slide .da-link {
 		top: 192px;
@@ -818,6 +848,14 @@
 	}
 	.da-arrows span {
 		top: 44%;
+	}
+}
+@media (max-width: 768px) {
+    #phone-span {
+        display: none !important;
+    }
+	#navbar {
+		background: url('shadow.png') repeat scroll 0 0 rgba(0, 0, 0, 0.1);
 	}
 }
 @media only screen and (max-width: 320px) and (min-width:240px) {
@@ -832,11 +870,18 @@
 	}
 	.da-slide h2{
 		top: 30px;
-		font-size: 1.1em;
+		font-size: 0.5em;
+	}
+	.big-ico {
+		font-size: initial !important;
+	}
+	.da-slide {
+		top: 40px;
 	}
 	.da-slide p{
-		top: 60px;
+		top: 89px;
 		font-size:12px;
+		line-height: 13px;
 	}
 	.da-slide .da-link {
 		top: 155px;
@@ -849,6 +894,6 @@
 		top: 44%;
 	}
 	.da-dots {
-		bottom: 55px;
+		bottom: 20px;
 	}
 }
