@@ -7,10 +7,6 @@
 }
 .navs-bns {
 	padding-left: 50px;
-	font-family: 'Kelly Slab', cursive;
-}
-.tel-bns {
-	font-family: 'Kelly Slab', cursive !important;
 }
 @media (max-width: 768px) {
     .logo-bns {
@@ -24,7 +20,6 @@
 	background: initial;
 }
 .logo-bns-text {
-	font-family: 'Kelly Slab', cursive;
 	color: #3498db;
 	display: none;
 }
@@ -42,14 +37,16 @@ li {
 	position: absolute;
 }
 
-.slider_bg {
+.slider-bg {
 	background:  url('bg.png');
 	background-size: 100%;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	padding-bottom: 3%;
+	&.slider-indent {
+		padding-bottom: 3%;
+	}
 }
 .portfolio {
 	h1 {
@@ -75,7 +72,6 @@ li {
 	text-shadow: 3px 3px 3px #000;
 }
 .logo-text {
-	font-family: 'Anton';	
 	color: #3498da;	
 }
 .logo-title {
@@ -94,4 +90,8 @@ li {
 }
 .nav-op {
 	height: 50px;
+}
+.nav-title {
+	font-weight: 500;
+    text-transform: uppercase;
 }
