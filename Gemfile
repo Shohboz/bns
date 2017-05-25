@@ -3,9 +3,10 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
+gem 'sqlite3'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
-	gem 'sqlite3'
+	# gem 'sqlite3'
 	gem 'rspec-rails'
 	gem 'capistrano'
   gem 'capistrano-rails'
@@ -22,9 +23,9 @@ group :test do
 	gem 'capybara'
 end
 
-group :production, :postgresql do
-	gem 'pg'
-end
+# group :production, :postgresql do
+# 	gem 'pg'
+# end
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.1'
