@@ -7,6 +7,11 @@ gem 'rails', '4.0.2'
 group :development, :test do
 	gem 'sqlite3'
 	gem 'rspec-rails'
+	gem 'capistrano'
+  gem 'capistrano-rails'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rvm'
+  gem 'capistrano-secrets-yml', '~> 1.0.0'
 end
 
 gem 'mail_form'
@@ -43,6 +48,8 @@ gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
+
+gem 'figaro'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

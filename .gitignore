@@ -24,3 +24,12 @@ doc/
 .DS_Store
 .idea
 .secret
+
+# Ignore Capistrano files
+/config/deploy/
+/config/deploy.rb
+/shared/
+# Ignore application configuration
+/config/application.yml
+# Ignore application configuration
+/config/application.yml
