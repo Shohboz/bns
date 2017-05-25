@@ -22,7 +22,7 @@ group :test do
 	gem 'capybara'
 end
 
-group :production do
+group :production, :postgresql do
 	gem 'pg'
 end
 
@@ -56,7 +56,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-gem 'rails_12factor', group: :production
+# gem 'rails_12factor', group: :production
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
