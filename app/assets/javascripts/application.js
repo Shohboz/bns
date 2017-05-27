@@ -18,8 +18,8 @@
 
 
 $(function($) {
-	$(".scroll").click(function(event){		
-		event.preventDefault();
+	$(".scroll").click(function(e){		
+		e.preventDefault();
 		$('html, body').animate({scrollTop:$(this.hash).offset().top}, 1200);
 	});
 

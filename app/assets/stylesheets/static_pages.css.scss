@@ -41,7 +41,7 @@ li {
 }
 
 .slider-bg {
-	background:  url('bg.png');
+	background: asset-url('bg.png');
 	background-size: 100%;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -89,7 +89,7 @@ li {
 	font-family: 'PT Sans', sans-serif;
 }
 .bg-op {
-	background: url('shadow.png') repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+	background: asset-url('shadow.png') repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
 }
 .nav-op {
 	height: 50px;

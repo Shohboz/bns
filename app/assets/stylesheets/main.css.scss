@@ -271,48 +271,6 @@ a:after {
    Wrap Sections
    ========================================================================== */
 
-#headerwrap {
-	background: url(../img/header_bg.jpg) no-repeat center top;
-	margin-top: -50px;
-	padding-top:120px;
-	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
-	min-height: 650px;
-	width: 100%;
-	
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#headerwrap h1 {
-	color:#ffffff;
-	margin-top: 90px;
-	padding-bottom: 30px;
-	letter-spacing: 8px;
-	font-size: 100px;
-	font-weight: bold;
-	text-shadow: 2px 2px 2px #000;
-}
-
-#headerwrap p {
-	color:#ffffff;
-	font-size: 40px;
-	font-weight: 400;
-	text-align: center;
-	line-height: 40px;
-	letter-spacing: 3px;
-	margin-left: 15px;
-	text-shadow: 1px 1px 1px #000;
-}
-
 #greywrap {
 	background: #f5f5f5;
 	margin-top: 0px;
@@ -408,31 +366,6 @@ a:after {
 	color: white;
 	font-size: 25px;
 }
-
-
-/* Section Dividers Backgrounds */
-
-.divider1 {
-	background-image: url('../img/bg/divider1.jpg')
-}
-
-.divider2 {
-	background-image: url('../img/bg/divider2.jpg')
-}
-
-.divider3 {
-	background-image: url('../img/bg/divider3.jpg');
-	margin-top: 0px;
-}
-
-.divider4 {
-	background-image: url('../img/bg/divider4.jpg')
-}
-
-.divider6 {
-	background-image: url('../img/bg/divider6.jpg')
-}
-
 
 
 /* ==========================================================================
