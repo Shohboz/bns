@@ -2,165 +2,160 @@
 <link href='//fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
 <div class="col-lg-12 container-alert">
-	<% flash.each do |name, msg| %>
-	  <% if msg.is_a?(String) %>
-	    <div class="alert col-lg-10 center-block special-alert alert-<%= name.to_s == 'notice' ? 'info' : 'danger' %>">
-	      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-	      <%= content_tag :div, msg, :id => "flash_#{name}" %>
-	    </div>
-	  <% end %>
-	<% end %>
+  <% flash.each do |name, msg| %>
+    <% if msg.is_a?(String) %>
+      <div class="alert col-lg-10 center-block special-alert alert-<%= name.to_s == 'notice' ? 'info' : 'danger' %>">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+      </div>
+    <% end %>
+  <% end %>
 </div>
 
 <div id="navbar-main">
-      <!-- Fixed navbar -->
-    <div class="navbar navbar-inverse navbar-fixed-top bg-op nav-op">
-      <div class="container-fluid">
-        <div class="navbar-header">
-        	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" style="padding-top: 10px">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-            </button>
-          	<h1 class="centered slider-text" style="padding-left: 30px">
-          		<a class="navbar-brand" href="#home">
-          			<div class="logo-bns"><%= render :partial => 'svg/logo' %></div>
-					<!--= image_tag("logo.png", class: "logo-bns") %-->
-					<!--span class="logo-bns-text">BNSERVICE</span-->
-					
-				</a>
-			</h1>
-        </div>
-
-        <div id="navbar" class="navbar-collapse collapse">
-          	<ul class="nav navbar-nav navs-bns">
-				<li>
-					<a href="#about" class="nav-title smoothScroll"> О нас</a>
-				</li>
-				<li>
-					<a href="#contact" class="nav-title smoothScroll"> Контакты</a>
-				</li>
-			</ul>
-
-			<ul id="phone-span" class="nav navbar-nav navbar-right">
-				<li>
-					<h3 class="slider-text tel-bns">
-						<span class="icon icon-mobile"></span>
-							<a href="tel:+7(8332)49-82-62" class="nav-title"> +7(8332)49-82-62 </a>
-						<br/>
-					</h3>
-				</li>
-			</ul>
-        </div><!--/.nav-collapse -->
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-inverse navbar-fixed-top bg-op nav-op">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" style="padding-top: 10px">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <h1 class="centered slider-text" style="padding-left: 30px">
+          <a class="navbar-brand" href="#home">
+            <div class="logo-bns"><%= render :partial => 'svg/logo' %></div>
+          </a>
+        </h1>
       </div>
-	</div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navs-bns">
+          <li>
+            <a href="#about" class="nav-title smoothScroll"> О нас</a>
+          </li>
+          <li>
+            <a href="#contact" class="nav-title smoothScroll"> Контакты</a>
+          </li>
+        </ul>
+        <ul id="phone-span" class="nav navbar-nav navbar-right">
+          <li>
+            <h3 class="slider-text tel-bns">
+              <span class="icon icon-mobile"></span>
+              <a href="tel:+7(8332)49-82-62" class="nav-title"> +7(8332)49-82-62 </a>
+              <br/>
+            </h3>
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
 </div>
 
 <!-- start slider -->
 <div class="slider-bg slider-indent" id="home">
-	<div class="wrap">
-		<div class="slider">
-			<!--start-da-slider-->
-			<div id="da-slider" class="da-slider">
-				<div class="da-slide">
-					<h2>Строительно-монтажные работы</h2>
-					<p>Монтаж инженерных сетей, строительство объектов связи</p>
-				</div>
-				<div class="da-slide">
-					<h2>Инсталляция и интеграция</h2>
-					<p>Инсталляция и интеграция радиоэлектронных и мультимедийных систем</p>
-				</div>
-				<div class="da-slide">
-					<h2>Автоматизация и диспетчеризация</h2>
-					<p>Автоматизация и диспетчеризация зданий и технологических процессов</p>
-				</div>
-			</div>
- 		</div>
-	</div>
+  <div class="wrap">
+    <div class="slider">
+      <!--start-da-slider-->
+      <div id="da-slider" class="da-slider">
+        <div class="da-slide">
+          <h2>Строительно-монтажные работы</h2>
+          <p>Монтаж инженерных сетей, строительство объектов связи</p>
+        </div>
+        <div class="da-slide">
+          <h2>Инсталляция и интеграция</h2>
+          <p>Инсталляция и интеграция радиоэлектронных и мультимедийных систем</p>
+        </div>
+        <div class="da-slide">
+          <h2>Автоматизация и диспетчеризация</h2>
+          <p>Автоматизация и диспетчеризация зданий и технологических процессов</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <!--//End-da-slider-->
 
 <!-- ==== ABOUT ==== -->
 <div id="greywrap" name="about">
-	<div class="container">
-		<div class="row white">
-		<br>
-			<h1 class="centered">О нас</h1>
-			<hr>
-			
-			<div class="col-lg-6">
-				<p>
-					Основными направлениями компании BNSERVICE являются разработка и внедрение высокотехнологичных решений в области автоматизации, контроля и управления.<br><br>
-					BNSERVICE выполняет полный комплекс работ по промышленной автоматизации:<br>
-					&#x02010; обследование производства<br>
-					&#x02010; постановка задачи<br>
-					&#x02010; проектирование и производство шкафов управления автоматики<br>
-					&#x02010; автоматизация и программирование контроллеров, частотных преобразователей и панелей управления<br>
-					&#x02010; реализация человеко-машинного интерфейса (HMI) на различных платформах (панели оператора, SCADA системы, WEB интерфейс и др.<br>
-					&#x02010; сдача системы автоматизации в промышленную эксплуатацию<br>
-					&#x02010; сопровождение систем автоматизации<br>
-					&#x02010; модернизация существующих систем АСУ ТП 
-					обучение персонала
-				</p>
-			</div><!-- col-lg-6 -->
-			
-			<div class="col-lg-6">
-				<p>
-					Специалисты компании имеют более чем 5-летний опыт работ по проектированию, разработке, вводу в эксплуатацию и сопровождению систем АСУ ТП, АСКУЭ и АСОДУ с использованием оборудования ведущих мировых производителей средств промышленной автоматизации.<br>
-					Накопленный огромный опыт создания разнообразных автоматизированных комплексов. 
-					<br><br>
-					Область наших проектов по автоматизации:<br>
-					&#x02010; автоматизация зданий и концертных площадок<br>
-					&#x02010; пищевая промышленность<br>
-					&#x02010; фармацевтическая промышленность<br>
-					&#x02010; лесопромышленный комплекс<br>
-					&#x02010; насосные станции<br>
-					&#x02010; производственные конвейера
-				</p>
-			</div><!-- col-lg-6 -->
-		</div><!-- row -->
-	</div>
-	<br>
-	<br>
+  <div class="container">
+    <div class="row white">
+    <br>
+      <h1 class="centered">О нас</h1>
+      <hr>
+
+      <div class="col-lg-6">
+        <p>
+          Основными направлениями компании BNSERVICE являются разработка и внедрение высокотехнологичных решений в области автоматизации, контроля и управления.<br><br>
+          BNSERVICE выполняет полный комплекс работ по промышленной автоматизации:<br>
+          &#x02010; обследование производства<br>
+          &#x02010; постановка задачи<br>
+          &#x02010; проектирование и производство шкафов управления автоматики<br>
+          &#x02010; автоматизация и программирование контроллеров, частотных преобразователей и панелей управления<br>
+          &#x02010; реализация человеко-машинного интерфейса (HMI) на различных платформах (панели оператора, SCADA системы, WEB интерфейс и др.<br>
+          &#x02010; сдача системы автоматизации в промышленную эксплуатацию<br>
+          &#x02010; сопровождение систем автоматизации<br>
+          &#x02010; модернизация существующих систем АСУ ТП
+          обучение персонала
+        </p>
+      </div><!-- col-lg-6 -->
+
+      <div class="col-lg-6">
+        <p>
+          Специалисты компании имеют более чем 5-летний опыт работ по проектированию, разработке, вводу в эксплуатацию и сопровождению систем АСУ ТП, АСКУЭ и АСОДУ с использованием оборудования ведущих мировых производителей средств промышленной автоматизации.<br>
+          Накопленный огромный опыт создания разнообразных автоматизированных комплексов.
+          <br><br>
+          Область наших проектов по автоматизации:<br>
+          &#x02010; автоматизация зданий и концертных площадок<br>
+          &#x02010; пищевая промышленность<br>
+          &#x02010; фармацевтическая промышленность<br>
+          &#x02010; лесопромышленный комплекс<br>
+          &#x02010; насосные станции<br>
+          &#x02010; производственные конвейера
+        </p>
+      </div><!-- col-lg-6 -->
+    </div><!-- row -->
+  </div>
+  <br>
+  <br>
 </div><!-- container -->
 
 <div class="container" id="contact" name="contact">
-	<div class="row">
-	<br>
-	<br>
-	<br>
-		<h1 class="centered">Свяжитесь с нами</h1>
-		<hr>
-		<br>
-		<br>
-		<div class="col-lg-5">
-			<h3>Контактная информация</h3>
-			<p>
-				<span class="icon icon-home"></span> Киров, Россия<br/>
-				<span class="icon icon-mobile"></span>
-					<a href="tel:+7(8332)49-82-62"> +7(8332)49-82-62 </a>
-				<br/>
-				<span class="icon icon-envelop"></span> <a href="mailto:info@bnservice.pro?subject=From promo site"> info@bnservice.pro</a> <br/>
-			</p>
-		</div><!-- col -->
-		
-		<div class="col-lg-7">
-			<h3>Написать письмо</h3>
-			<p>
-				<%= render :template => 'contacts/new' %>
-				<br>
-			</p>
-		</div><!-- col -->		
+  <div class="row">
+  <br>
+  <br>
+  <br>
+    <h1 class="centered">Свяжитесь с нами</h1>
+    <hr>
+    <br>
+    <br>
+    <div class="col-lg-5">
+      <h3>Контактная информация</h3>
+      <p>
+        <span class="icon icon-home"></span> Киров, Россия<br/>
+        <span class="icon icon-mobile"></span>
+          <a href="tel:+7(8332)49-82-62"> +7(8332)49-82-62 </a>
+        <br/>
+        <span class="icon icon-envelop"></span> <a href="mailto:info@bnservice.pro?subject=From promo site"> info@bnservice.pro</a> <br/>
+      </p>
+    </div><!-- col -->
 
-	</div><!-- row -->
+    <div class="col-lg-7">
+      <h3>Написать письмо</h3>
+      <p>
+        <%= render :template => 'contacts/new' %>
+        <br>
+      </p>
+    </div><!-- col -->
+
+  </div><!-- row -->
 
 </div><!-- container -->
 
 <div class="slider-bg">
-	<div id="footerwrap" class="bg-op">		
-		<div class="container">
-			<h4>&#x000A9; ООО "БНС ИНЖЕНИРИНГ" 2017</h4>
-		</div>
-	</div>
+  <div id="footerwrap" class="bg-op">
+    <div class="container">
+      <h4>&#x000A9; ООО "БНС ИНЖЕНИРИНГ" 2018</h4>
+    </div>
+  </div>
 </div>
