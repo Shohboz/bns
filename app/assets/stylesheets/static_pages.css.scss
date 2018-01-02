@@ -1,111 +1,107 @@
-// Place all the styles related to the StaticPages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-/* start slider */
 .navbar-brand {
-	padding: initial;
-	margin-top: -3px;
+  padding: initial;
+  margin-top: -3px;
 }
 .navs-bns {
-	padding-left: 50px;
+  padding-left: 50px;
 }
 @media (max-width: 768px) {
-    .logo-bns {
-        display: none;
-    }
-	.logo-bns-text {
-		display: block !important;
-	}
+  .logo-bns {
+    display: none;
+  }
+  .logo-bns-text {
+    display: block !important;
+  }
 }
 .logo-bns {
-	background: initial;
-	width: 150px;
-    height: 16px;
+  background: initial;
+  width: 150px;
+  height: 16px;
 }
 .logo-bns-text {
-	color: #3498db;
-	display: none;
+  color: #3498db;
+  display: none;
 }
 li {
-	h3.slider-text{
-		margin-top: 12px;
-	}
+  h3.slider-text {
+    margin-top: 12px;
+  }
 }
 .special-alert {
-	top: 120px;
-	float: none;
-	z-index: 9000;
+  top: 120px;
+  float: none;
+  z-index: 9000;
 }
 .container-alert {
-	position: absolute;
+  position: absolute;
 }
 
 .slider-bg {
-	background: asset-url('bg.png');
-	background-size: 100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	&.slider-indent {
-		padding-bottom: 3%;
-	}
+  background: asset-url("bg.png");
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  &.slider-indent {
+    padding-bottom: 3%;
+  }
 }
 .portfolio {
-	h1 {
-		color: #FFFFFF;
-	}	
+  h1 {
+    color: #ffffff;
+  }
 }
 .svg-img {
-	stroke: #000000;
-	fill:none;
-	-webkit-filter: drop-shadow( -5px -5px 5px #fff );
-	filter: drop-shadow( -5px -5px 5px #fff );
+  stroke: #000000;
+  fill: none;
+  -webkit-filter: drop-shadow(-5px -5px 5px #fff);
+  filter: drop-shadow(-5px -5px 5px #fff);
 }
 .slider {
-	padding: 0 4%;
+  padding: 0 4%;
 }
 .slider-text {
-	font-family: 'PT Sans';
-	/*text-shadow: 1px 1px 1px #000;*/
-	color: #FFFFFF;
+  font-family: "PT Sans";
+  /*text-shadow: 1px 1px 1px #000;*/
+  color: #ffffff;
 }
 .big-ico {
-	font-size: 100px;
-	text-shadow: 3px 3px 3px #000;
+  font-size: 100px;
+  text-shadow: 3px 3px 3px #000;
 }
 .logo-text {
-	color: #3498da;	
+  color: #3498da;
 }
 .logo-title {
-	font-size: 45px;
-	text-shadow: 2px 2px 2px #000;
+  font-size: 45px;
+  text-shadow: 2px 2px 2px #000;
 }
 .logo-sub-title {
-	position: relative;
-	top: -10px;
-	font-size: 18px;
-	text-shadow: 1px 1px 1px #000;
-	font-family: 'PT Sans', sans-serif;
+  position: relative;
+  top: -10px;
+  font-size: 18px;
+  text-shadow: 1px 1px 1px #000;
+  font-family: "PT Sans", sans-serif;
 }
 .bg-op {
-	background: asset-url('shadow.png') repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+  background: asset-url("shadow.png") repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
 }
 .nav-op {
-	height: 50px;
+  height: 50px;
 }
 .nav-title {
-	font-weight: 500;
-    text-transform: uppercase;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 .tel-bns {
-	font-family: "Lato";
-	font-size: 21px;
+  font-family: "Lato";
+  font-size: 21px;
 }
 #phone-span {
-	padding-left: 30px;
-	padding-right: 50px;
+  padding-left: 30px;
+  padding-right: 50px;
 }
-#greywrap p{
-	text-align: left;
+#greywrap p {
+  text-align: left;
 }

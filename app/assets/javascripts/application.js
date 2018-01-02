@@ -16,20 +16,18 @@
 //= require turbolinks
 //= require_tree .
 
-
 $(function($) {
-	$(".scroll").click(function(e){		
-		e.preventDefault();
-		$('html, body').animate({scrollTop:$(this.hash).offset().top}, 1200);
-	});
+  $(".scroll").click(function(e) {
+    e.preventDefault();
+    $("html, body").animate({ scrollTop: $(this.hash).offset().top }, 1200);
+  });
 
-	$('#da-slider').cslider({
-		autoplay	: true,
-		bgincrement	: 3e3
-	});
-
+  $("#da-slider").cslider({
+    autoplay: true,
+    bgincrement: 3e3
+  });
 });
 
-$(document).ready(function(){
-	$(".alert").fadeOut(8e3);
+$(document).ready(function() {
+  $(".alert").fadeOut(8e3);
 });
