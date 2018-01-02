@@ -16,7 +16,7 @@
 .logo-bns {
   background: initial;
   width: 150px;
-  height: 16px;
+  height: 14px;
 }
 .logo-bns-text {
   color: #3498db;
@@ -94,9 +94,15 @@ li {
   font-weight: 500;
   text-transform: uppercase;
 }
+.nav li {
+  font-size: 17px;
+}
 .tel-bns {
   font-family: "Lato";
-  font-size: 21px;
+  font-size: 19px;
+  .icon {
+    font-size: 16px;
+  }
 }
 #phone-span {
   padding-left: 30px;
@@ -104,4 +110,11 @@ li {
 }
 #greywrap p {
   text-align: left;
+}
+h1.logo {
+  padding-left: 30px;
+  margin-top: 18px;
+}
+.navbar-toggle.collapsed {
+  padding-top: 10px;
 }
