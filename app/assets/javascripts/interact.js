@@ -57,68 +57,7 @@ $(document).ready(function() {
   });
 });
 
-$(window).load(function() {
-  //Fade in Different Text
-  var textlist = new Array(
-    "Reggae Music",
-    "Skimboarding",
-    "The Beach",
-    "Simple Design"
-  );
-  var timer;
-
-  function textFade(index) {
-    $("#update")
-      .hide()
-      .html(textlist[index])
-      .fadeIn(800);
-
-    index++;
-    timer = setTimeout(function() {
-      textFade(index % textlist.length);
-    }, 2000);
-  }
-  $(document).ready(function() {
-    textFade(0);
-  });
-});
-
 $(function() {
-  function scroll(direction) {
-    var scroll,
-      i,
-      positions = [],
-      here = $(window).scrollTop(),
-      collection = $(".section");
-
-    collection.each(function() {
-      positions.push(parseInt($(this).offset()["top"], 10));
-    });
-
-    for (i = 0; i < positions.length; i++) {
-      if (direction == "next" && positions[i] > here) {
-        scroll = collection.get(i);
-        break;
-      }
-      if (direction == "prev" && i > 0 && positions[i] >= here) {
-        scroll = collection.get(i - 1);
-        break;
-      }
-    }
-
-    if (scroll) {
-      $.scrollTo(scroll, {
-        duration: 1000
-      });
-    }
-
-    return false;
-  }
-
-  $("#next,#prev").click(function() {
-    return scroll($(this).attr("id"));
-  });
-
   // Added code
   // Register keypress events for the current page
   $(document).keypress(function(e) {
@@ -132,14 +71,5 @@ $(function() {
         return scroll("next");
         break;
     }
-  });
-
-  // End added code
-
-  $(".scrolltoanchor").click(function() {
-    $.scrollTo($($(this).attr("href")), {
-      duration: 2000
-    });
-    return false;
   });
 });

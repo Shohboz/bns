@@ -21,7 +21,6 @@ $(function($) {
     e.preventDefault();
     $("html, body").animate({ scrollTop: $(this.hash).offset().top }, 1200);
   });
-
   $("#da-slider").cslider({
     autoplay: true,
     bgincrement: 3e3
