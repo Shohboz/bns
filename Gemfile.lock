@@ -93,6 +93,7 @@ GEM
     mime-types (1.25.1)
     mini_portile2 (2.1.0)
     minitest (4.7.5)
+    modernizr-rails (2.7.1)
     multi_json (1.12.1)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
@@ -199,6 +200,7 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   mail_form
+  modernizr-rails
   rails (= 4.0.2)
   rspec-rails
   sass-rails (~> 4.0.1)
