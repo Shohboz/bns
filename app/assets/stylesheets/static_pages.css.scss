@@ -121,19 +121,37 @@ h1.logo {
 
 .card {
   padding: 15px;
+  min-height: 150px;
 
-  .pict {
-    width: 100px;
+  .card-header {
     height: 100px;
-    padding-top: 25px;
   }
 
-  .thumb {
-    height: 120px;
-    width: 150px;
+
+  &.card-lg {
+    .info {
+      padding-left: 120px;
+    }
+
+    .img {
+      height: 100px;
+      width: 140px;
+    }
   }
 
-  .pict-text {
-    padding-left: 100px;
+  &.card-sm {
+    p {
+      padding-left: 140px;
+    }
+
+    .img {
+      height: 90px;
+      width: 120px;
+      margin-top: 20px;
+    }
   }
+}
+
+.section {
+  padding-top: 40px;
 }

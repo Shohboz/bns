@@ -70,18 +70,16 @@
   </div>
 </div>
 
-<div id="about" class="greywrap" name="about">
+<div id="about" class="greywrap section" name="about">
   <div class="container">
     <div class="row white">
-    <br>
       <h1 class="centered">О нас</h1>
       <hr>
 
       <div class="col-lg-6">
         <p>
           Основными направлениями компании BNSERVICE являются разработка и внедрение высокотехнологичных решений в области автоматизации, контроля и управления.<br />
-          Специалисты компании имеют более чем 5-летний опыт работ по проектированию, разработке, вводу в эксплуатацию и сопровождению систем АСУ ТП, АСКУЭ и АСОДУ с использованием оборудования ведущих мировых производителей средств промышленной автоматизации.<br />
-          Накопленный огромный опыт создания разнообразных автоматизированных комплексов.
+          Специалисты компании имеют более чем 5-летний опыт работ по проектированию, разработке, вводу в эксплуатацию и сопровождению систем АСУ ТП, АСКУЭ и АСОДУ с использованием оборудования ведущих мировых производителей средств промышленной автоматизации.
         </p>
       </div><!-- col-lg-6 -->
 
@@ -98,56 +96,12 @@
   <br>
 </div><!-- container -->
 
-<div id="home-solutions" name="home-solutions">
-  <div class="container">
-    <div class="row white">
-    <br>
-      <h1 class="centered">Интеллектуальные домашние решения</h1>
-      <hr>
-      <div class="row">
-        <div class="container">
-          <div class="col-md-4">
-            <%= render :partial => 'home_card', locals: {:text => "Удаленный доступ", :svg => "svg/smartfone", :describe => "Удаленный доступ к системе с мобильного устройства"} %>
-          </div>
-
-          <div class="col-md-4">
-            <%= render :partial => 'home_card', locals: {:text => "Освещение", :svg => "svg/lamp", :describe => "Управление группами светильников, диммирование освещения"} %>
-          </div>
-
-          <div class="col-md-4">
-            <%= render :partial => 'home_card', locals: {:text => "Климат-контроль", :svg => "svg/temperature", :describe => "Управление температурой и влажностью в жилом пространстве"} %>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="container">
-          <div class="col-md-4">
-            <%= render :partial => 'home_card', locals: {:text => "Мультимедиа решения", :svg => "svg/media", :describe => "Интеграция аудио/видео техники в систему"} %>
-          </div>
-
-          <div class="col-md-4">
-            <%= render :partial => 'home_card', locals: {:text => "Контроль доступа", :svg => "svg/camera", :describe => "Технические средства доступа в помещение, видеонаблюдение"} %>
-          </div>
-
-          <div class="col-md-4">
-            <%= render :partial => 'home_card', locals: {:text => "Сценарии", :svg => "svg/script", :describe => "Сценарии управления температурой помещения, включения освещения, энергосберегающие сценарии"} %>
-          </div>
-
-        </div>
-      </div>
-
-    </div><!-- row -->
-  </div>
-</div><!-- container -->
-
-<div id="automation" class="greywrap" name="automation">
+<div id="automation" class="section" name="automation">
   <div class="container">
     <div class="row white">
       <h1 class="centered">Автоматизация и диспетчеризация</h1>
       <hr>
-
+      <br>
       <div class="row">
         <div class="container">
           <div class="col-lg-6">
@@ -190,9 +144,54 @@
   <br>
 </div><!-- container -->
 
-<div class="container" id="contact" name="contact">
+<div id="home-solutions" class="greywrap section" name="home-solutions">
+  <div class="container">
+    <div class="row white">
+      <h1 class="centered">Интеллектуальные домашние решения</h1>
+      <hr>
+      <br>
+      <div class="row">
+        <div class="container">
+          <div class="col-md-4">
+            <%= render :partial => 'home_card', locals: {:text => "Удаленный доступ", :svg => "svg/smartfone", :describe => "Удаленный доступ к системе с мобильного устройства"} %>
+          </div>
+
+          <div class="col-md-4">
+            <%= render :partial => 'home_card', locals: {:text => "Освещение", :svg => "svg/lamp", :describe => "Управление группами светильников, диммирование освещения"} %>
+          </div>
+
+          <div class="col-md-4">
+            <%= render :partial => 'home_card', locals: {:text => "Климат-контроль", :svg => "svg/temperature", :describe => "Управление температурой и влажностью в жилом пространстве"} %>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="container">
+          <div class="col-md-4">
+            <%= render :partial => 'home_card', locals: {:text => "Мультимедиа решения", :svg => "svg/media", :describe => "Интеграция аудио/видео техники в систему"} %>
+          </div>
+
+          <div class="col-md-4">
+            <%= render :partial => 'home_card', locals: {:text => "Контроль доступа", :svg => "svg/camera", :describe => "Технические средства доступа в помещение, видеонаблюдение"} %>
+          </div>
+
+          <div class="col-md-4">
+            <%= render :partial => 'home_card', locals: {:text => "Сценарии", :svg => "svg/script", :describe => "Сценарии управления температурой помещения, включения освещения, энергосберегающие сценарии"} %>
+          </div>
+
+        </div>
+      </div>
+
+    </div><!-- row -->
+  </div>
+</div><!-- container -->
+
+
+<div class="container section" id="contact" name="contact">
   <div class="row">
-  <br />
+    <br>
     <h1 class="centered">Свяжитесь с нами</h1>
     <hr>
     <br>
