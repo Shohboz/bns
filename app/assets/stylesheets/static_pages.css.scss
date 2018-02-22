@@ -118,3 +118,22 @@ h1.logo {
 .navbar-toggle.collapsed {
   padding-top: 10px;
 }
+
+.card {
+  padding: 15px;
+
+  .pict {
+    width: 100px;
+    height: 100px;
+    padding-top: 25px;
+  }
+
+  .thumb {
+    height: 120px;
+    width: 150px;
+  }
+
+  .pict-text {
+    padding-left: 100px;
+  }
+}
